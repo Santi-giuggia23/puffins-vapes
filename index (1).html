@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puffins Vapes | Vapes Desechables en Escobar, Zona Norte</title>
+  <meta name="description" content="Puffins Vapes — Tienda online de vapes desechables en Belén de Escobar, Zona Norte. Elfbar, Ignite y más. Envíos sin costo en Escobar, Maschwitz, Matheu, Loma Verde y Cazador. Atención 24hs."/>
+  <meta name="keywords" content="vapes Escobar, vapes zona norte, vapes desechables, Elfbar Escobar, Ignite vapes, vapes Buenos Aires, comprar vapes, vapes Maschwitz, vapes Matheu, Puffins Vapes, vapes Argentina"/>
+  <meta name="author" content="Puffins Vapes"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://puffins-vapes.vercel.app"/>
+  <meta property="og:title" content="Puffins Vapes | Vapes Desechables en Escobar"/>
+  <meta property="og:description" content="Tienda online de vapes desechables en Zona Norte. Elfbar, Ignite y más. Envíos sin costo en Escobar y alrededores."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://puffins-vapes.vercel.app"/>
+  <meta property="og:locale" content="es_AR"/>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Puffins Vapes",
+    "description": "Tienda online de vapes desechables en Belén de Escobar, Zona Norte, Buenos Aires.",
+    "url": "https://puffins-vapes.vercel.app",
+    "telephone": "+5493484200611",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belén de Escobar",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "openingHours": "Mo-Su 00:00-24:00",
+    "sameAs": ["https://www.instagram.com/puffins.vapes/"]
+  }
+  </script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="bg"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
+<!-- AGE GATE -->
+<div id="age-gate">
+  <div class="gate-card">
+    <img class="mascot" src="images/logo.jpg" alt="Puffins Vapes"/>
+    <div class="brand-name">Puffins Vapes</div>
+    <div class="brand-sub">Premium Vapes</div>
+    <div class="divider"></div>
+    <h2 class="gate-title">Verificación de edad</h2>
+    <p class="gate-desc">Este sitio contiene productos para adultos.<br/>¿Tenés 18 años o más?</p>
+    <div class="btn-group">
+      <button class="btn btn-yes" onclick="enterSite()">Sí, tengo +18</button>
+      <button class="btn btn-no" onclick="rejectUser()">No, soy menor</button>
+    </div>
+    <p class="legal">Al ingresar confirmás que tenés la edad legal para adquirir estos productos en tu país.</p>
+  </div>
+</div>
+
+<!-- REJECTED -->
+<div id="rejected">
+  <div style="font-size:3rem">🐧</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--charcoal)">Lo sentimos</h2>
+  <p style="font-size:0.88rem;color:var(--muted);max-width:280px;line-height:1.6">Este sitio está disponible únicamente para mayores de 18 años.</p>
+</div>
+
+<!-- SITE -->
+<div id="site">
+  <div class="site-topbar">
+    <img src="images/logo.jpg" alt="Puffins Vapes" class="topbar-logo"/>
+    <button class="cart-btn" onclick="openCart()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cart-label">Carrito</span><span class="cart-count">0</span>
+    </button>
+  </div>
+  <div class="site-logo">Puffins Vapes</div>
+  <div class="site-tagline">Premium Vapes</div>
+  <nav class="site-nav">
+    <a href="#" onclick="event.preventDefault();openResenas()">Reseñas</a>
+    <a href="#" onclick="event.preventDefault();openNosotros()">Nosotros</a>
+    <a href="#" onclick="event.preventDefault();openContacto()">Contacto</a>
+  </nav>
+  <a href="#" class="cta" onclick="event.preventDefault();openCatalog()">Explorar catálogo</a>
+</div>
+
+<!-- CATALOG -->
+<div id="catalog">
+  <div class="catalog-header">
+    <button class="catalog-logo" onclick="backToHome()">Puffins Vapes</button>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button onclick="openAdmin()" style="background:none;border:none;font-size:0.9rem;color:var(--muted);cursor:pointer;padding:0.45rem 0.5rem;touch-action:manipulation;">⚙</button>
+      <button class="cart-btn" onclick="openCart()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-label">Carrito</span><span class="cart-count">0</span>
+      </button>
+      <button class="back-btn" onclick="backToHome()">&#8592; Inicio</button>
+    </div>
+  </div>
+  <div class="catalog-body">
+    <div class="catalog-title">Catálogo</div>
+    <div class="catalog-subtitle">Vapes desechables · Premium</div>
+    <div class="brand-tabs" id="brandTabs"><span style="color:var(--muted);font-size:0.85rem;">Cargando...</span></div>
+    <div id="catalogContent"><div style="text-align:center;padding:3rem;color:var(--muted);">Cargando productos...</div></div>
+  </div>
+</div>
+
+<!-- NOSOTROS -->
+<div id="nosotros">
+  <div class="nosotros-header">
+    <button class="catalog-logo" onclick="closeNosotros()">Puffins Vapes</button>
+    <button class="back-btn" onclick="closeNosotros()">&#8592; Inicio</button>
+  </div>
+  <div class="nosotros-body">
+    <div class="nosotros-title">Nosotros</div>
+    <div class="nosotros-subtitle">Quiénes somos · Zona norte, Buenos Aires</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="info-card-icon">📍</div><div class="info-card-title">Ubicación</div><div class="info-card-text">Belén de Escobar, Zona Norte, Buenos Aires</div></div>
+      <div class="info-card"><div class="info-card-icon">🗓️</div><div class="info-card-title">Experiencia</div><div class="info-card-text">Más de 2 años vendiendo vapes.</div></div>
+      <div class="info-card"><div class="info-card-icon">📦</div><div class="info-card-title">Envíos</div><div class="info-card-text">Sin costo en Escobar y alrededores</div></div>
+      <div class="info-card"><div class="info-card-icon">🛡️</div><div class="info-card-title">Garantía</div><div class="info-card-text">Cubrimos errores de fábrica</div></div>
+    </div>
+    <div class="nosotros-section"><div class="nosotros-section-title">🏪 ¿Quiénes somos?</div><div class="nosotros-section-text">Somos Puffins Vapes, una tienda 100% online con base en Belén de Escobar, Zona Norte. Llevamos más de 2 años en el mundo del vapeo, ofreciendo productos de calidad a precios accesibles. Nos especializamos en vapes desechables de las mejores marcas y trabajamos directamente con cada cliente para garantizar la mejor experiencia de compra.</div></div>
+    <div class="nosotros-section"><div class="nosotros-section-title">🚚 Envíos sin costo</div><div class="nosotros-section-text">Los envíos los realizamos de forma personal, garantizando que tu pedido llegue en el día. Sin costo de envío para las siguientes zonas:</div><div class="envio-tags"><span class="envio-tag">📍 Escobar</span><span class="envio-tag">📍 Maschwitz</span><span class="envio-tag">📍 Matheu</span><span class="envio-tag">📍 Loma Verde</span><span class="envio-tag">📍 Cazador</span></div></div>
+    <div class="nosotros-section"><div class="nosotros-section-title">🛡️ Garantía</div><div class="nosotros-section-text">Todos nuestros productos cuentan con garantía por errores de fábrica. Si tu vape presenta un defecto comprobable de origen (por ejemplo, viene roto o explotado de fábrica), lo reponemos sin costo. La garantía no cubre daños por mal uso.</div></div>
+    <div class="nosotros-section"><div class="nosotros-section-title">🔍 ¿No encontrás lo que buscás?</div><div class="nosotros-section-text">Contamos con una amplia variedad de productos y marcas. Si no encontrás el vape que buscás en el catálogo, escribinos por WhatsApp y lo consultamos para vos.</div></div>
+    <div class="nosotros-section"><div class="nosotros-section-title">📍 Nuestra zona</div><div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d823.5395665667606!2d-58.79489517914277!3d-34.346449938761275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1777058000495!5m2!1ses-419!2sar" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+    <a href="https://wa.me/5493484200611?text=Hola!%20Quisiera%20consultar%20sobre%20un%20producto%20:)" target="_blank" class="wa-banner">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.486a.5.5 0 0 0 .609.61l5.79-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.001-1.371l-.358-.214-3.718.974.991-3.624-.234-.373A9.818 9.818 0 0 1 2.18 12c0-5.42 4.4-9.818 9.819-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+      <div><div class="wa-banner-title">¿No encontrás tu vape? Escribinos</div><div class="wa-banner-sub">Te respondemos al instante por WhatsApp</div></div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<div id="contacto">
+  <div class="catalog-header">
+    <button class="catalog-logo" onclick="closeContacto()">Puffins Vapes</button>
+    <button class="back-btn" onclick="closeContacto()">&#8592; Inicio</button>
+  </div>
+  <div class="contacto-body">
+    <div class="contacto-title">Contacto</div>
+    <div class="contacto-subtitle">Estamos para ayudarte</div>
+    <p class="contacto-intro">¿Tenés alguna consulta, querés hacer un pedido o no encontrás lo que buscás? Escribinos y te respondemos al instante.</p>
+    <div class="contact-cards">
+      <a href="https://wa.me/5493484200611?text=Hola!%20Quiero%20hacerte%20una%20consulta%20:)" target="_blank" class="contact-card">
+        <div class="contact-card-icon wa"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.486a.5.5 0 0 0 .609.61l5.79-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.001-1.371l-.358-.214-3.718.974.991-3.624-.234-.373A9.818 9.818 0 0 1 2.18 12c0-5.42 4.4-9.818 9.819-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg></div>
+        <div class="contact-card-info"><div class="contact-card-title">WhatsApp</div><div class="contact-card-sub">+54 9 3484 200611 · Respuesta inmediata</div></div>
+        <div class="contact-card-arrow">›</div>
+      </a>
+      <a href="https://www.instagram.com/puffins.vapes/" target="_blank" class="contact-card">
+        <div class="contact-card-icon ig"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+        <div class="contact-card-info"><div class="contact-card-title">Instagram</div><div class="contact-card-sub">@puffins.vapes · Seguinos para novedades</div></div>
+        <div class="contact-card-arrow">›</div>
+      </a>
+    </div>
+    <div class="horario-box"><div class="horario-icon">🕐</div><div><div class="horario-title">Horario de atención</div><div class="horario-text">Los 7 días de la semana, las 24 horas</div></div></div>
+  </div>
+</div>
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCartOnBg(event)">
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">Tu pedido</div>
+      <button class="cart-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty"><div style="font-size:2.5rem;margin-bottom:0.75rem">🛒</div><div>Tu carrito está vacío</div></div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-amount" id="cartTotal">$0</span></div>
+      <a id="whatsappBtn" href="#" target="_blank" class="whatsapp-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.486a.5.5 0 0 0 .609.61l5.79-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.001-1.371l-.358-.214-3.718.974.991-3.624-.234-.373A9.818 9.818 0 0 1 2.18 12c0-5.42 4.4-9.818 9.819-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+        Enviar pedido por WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- RESENAS -->
+<div id="resenas">
+  <div class="catalog-header">
+    <button class="catalog-logo" onclick="closeResenas()">Puffins Vapes</button>
+    <div style="display:flex;align-items:center;gap:8px;"><button onclick="openAdmin()" style="background:none;border:none;font-size:0.9rem;color:var(--muted);cursor:pointer;padding:0.45rem 0.5rem;touch-action:manipulation;">⚙</button><button class="back-btn" onclick="closeResenas()">&#8592; Inicio</button></div>
+  </div>
+  <div class="resenas-body">
+    <div class="resenas-title">Reseñas</div>
+    <div class="resenas-subtitle">Lo que dicen nuestros clientes</div>
+
+    <div class="resenas-grid" id="resenasGrid">
+      <div style="text-align:center;padding:2rem;color:var(--muted);font-size:0.9rem;">Cargando reseñas...</div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="resena-form">
+      <div class="resena-form-title">✍️ Dejá tu reseña</div>
+      <input type="text" id="resenaNombre" placeholder="Tu nombre" maxlength="50"/>
+      <textarea id="resenaTexto" placeholder="Contanos tu experiencia con Puffins Vapes..."></textarea>
+      <div class="estrellas-selector" id="estrellasSelector">
+        <button class="estrella-btn active" data-val="1" onclick="setEstrellas(1)">⭐</button>
+        <button class="estrella-btn active" data-val="2" onclick="setEstrellas(2)">⭐</button>
+        <button class="estrella-btn active" data-val="3" onclick="setEstrellas(3)">⭐</button>
+        <button class="estrella-btn active" data-val="4" onclick="setEstrellas(4)">⭐</button>
+        <button class="estrella-btn active" data-val="5" onclick="setEstrellas(5)">⭐</button>
+      </div>
+      <button class="resena-submit" onclick="enviarResena()">Enviar reseña</button>
+      <div class="resena-msg" id="resenaMsgUsuario"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div id="adminPanel">
+  <div class="admin-header">
+    <div class="admin-title">Panel de Stock</div>
+    <button class="back-btn" onclick="closeAdmin()">✕ Cerrar</button>
+  </div>
+  <div class="admin-body">
+    <div id="adminLogin" class="admin-login">
+      <h2>Acceso administrador</h2>
+      <input type="password" id="adminPass" placeholder="Contraseña" onkeydown="if(event.key==='Enter') checkAdmin()"/>
+      <button onclick="checkAdmin()">Ingresar</button>
+      <p id="loginError" style="color:#c0392b;font-size:0.8rem;margin-top:0.5rem;display:none">Contraseña incorrecta</p>
+    </div>
+    <div id="adminTable" style="display:none">
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1.5rem;">Usá los botones + y − para ajustar el stock y guardá los cambios.</p>
+
+      <!-- Resenas admin -->
+      <div style="background:#fff;border:0.5px solid rgba(250,128,114,0.2);border-radius:16px;padding:1.25rem;margin-bottom:1.5rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--charcoal);margin-bottom:1rem;">⭐ Moderación de reseñas</div>
+        <div id="adminResenasContainer"><p style="font-size:0.85rem;color:var(--muted);">Cargando...</p></div>
+      </div>
+      <table class="admin-table">
+        <thead><tr><th>Marca</th><th>Sabor</th><th>Puffs</th><th>Precio</th><th>Stock</th><th></th></tr></thead>
+        <tbody id="adminTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- WhatsApp flotante -->
+<a class="wa-float" href="https://wa.me/5493484200611?text=Hola!%20Quiero%20hacerte%20una%20consulta%20:)" target="_blank">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.486a.5.5 0 0 0 .609.61l5.79-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.001-1.371l-.358-.214-3.718.974.991-3.624-.234-.373A9.818 9.818 0 0 1 2.18 12c0-5.42 4.4-9.818 9.819-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+</a>
+<script src="main.js"></script>
+</body>
+</html>
